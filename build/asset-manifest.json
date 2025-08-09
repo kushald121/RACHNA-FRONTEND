@@ -1,16 +1,26 @@
 {
   "files": {
-    "main.css": "/Rachna/static/css/main.b3fc149e.css",
-    "main.js": "/Rachna/static/js/main.d10f7b9e.js",
+    "main.css": "/Rachna/static/css/main.773a86f2.css",
+    "main.js": "/Rachna/static/js/main.f328135e.js",
     "static/media/armstrong.png": "/Rachna/static/media/armstrong.47604bd49c7c78af6cbf.png",
+    "static/media/heroimg1.jpg": "/Rachna/static/media/heroimg1.3776d9841122e620999b.jpg",
+    "static/media/heroimg6.jpg": "/Rachna/static/media/heroimg6.1f1d5b60f846b1f07393.jpg",
     "static/media/logo.png": "/Rachna/static/media/logo.de4c42c9fa220fb32b83.png",
-    "static/media/luna-letter.png": "/Rachna/static/media/luna-letter.4d2107375af4876f5869.png",
+    "static/media/heroimg5.jpg": "/Rachna/static/media/heroimg5.e5c4da36a730dae00569.jpg",
+    "static/media/heroimg4.jpg": "/Rachna/static/media/heroimg4.7ba9a128fd57b6d0ae37.jpg",
+    "static/media/heroimg7.jpg": "/Rachna/static/media/heroimg7.fae5fd8f796d9ff4b9fb.jpg",
+    "static/media/heroimg2.jpg": "/Rachna/static/media/heroimg2.20d6e95206379b1fef48.jpg",
+    "static/media/heroimg3.jpg": "/Rachna/static/media/heroimg3.ce142d37f8e19af5c86d.jpg",
+    "static/media/paytm.png": "/Rachna/static/media/paytm.2306f6bbc6c616f2cf69.png",
+    "static/media/bhim.png": "/Rachna/static/media/bhim.be9d90ef2c303a00dc9f.png",
+    "static/media/phonepe.jpg": "/Rachna/static/media/phonepe.d7fcc91b33194190cca9.jpg",
+    "static/media/gpay.avif": "/Rachna/static/media/gpay.dccc33705de629099830.avif",
     "index.html": "/Rachna/index.html",
-    "main.b3fc149e.css.map": "/Rachna/static/css/main.b3fc149e.css.map",
-    "main.d10f7b9e.js.map": "/Rachna/static/js/main.d10f7b9e.js.map"
+    "main.773a86f2.css.map": "/Rachna/static/css/main.773a86f2.css.map",
+    "main.f328135e.js.map": "/Rachna/static/js/main.f328135e.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3fc149e.css",
-    "static/js/main.d10f7b9e.js"
+    "static/css/main.773a86f2.css",
+    "static/js/main.f328135e.js"
   ]
 }
