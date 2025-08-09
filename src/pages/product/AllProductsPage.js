@@ -376,37 +376,19 @@ function ProductCard({ product, isWishlisted, onToggleWishlist }) {
       layout
       className="bg-white rounded-3xl flex flex-col overflow-hidden group relative border border-zinc-200/80 shadow-lg shadow-zinc-200/40 transition-all duration-300 hover:shadow-2xl hover:shadow-indigo-200/40"
     >
-
-      {/* --- Wishlist Button (MOVED HERE and RESTYLED) --- */}
-
       {/* Wishlist Button */}
-
       <button
         aria-label="Toggle Wishlist"
         onClick={() => onToggleWishlist(product.id)}
-        className={`absolute top-80 right-6 z-10 flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-xl border-2 border-zinc-200 
-
-                           transform -translate-y-1/2 transition-all duration-300 ease-in-out
-                           group-hover:scale-110 group-hover:-translate-y-[60%]
-                           ${
-                             isWishlisted
-                               ? "text-rose-500"
-                               : "text-zinc-500 hover:text-rose-500"
-                           }`}
-
-                   transform -translate-y-1/2 transition-all duration-300 ease-in-out
-                   group-hover:scale-110 group-hover:-translate-y-[60%]
-                   ${isWishlisted ? "text-rose-500" : "text-zinc-500 hover:text-rose-500"}`}
-
+        className={`absolute top-6 right-6 z-10 flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-xl border-2 border-zinc-200 
+                    transform transition-all duration-300 ease-in-out
+                    group-hover:scale-110
+                    ${isWishlisted ? "text-rose-500" : "text-zinc-500 hover:text-rose-500"}`}
       >
         {isWishlisted ? <FaHeart size={22} /> : <FiHeart size={22} />}
       </button>
 
-
-      {/* --- Image Area --- */}
-
       {/* Image Area */}
-
       <div className="relative w-full h-80 overflow-hidden bg-zinc-100">
         <img
           src={product.image}
@@ -417,10 +399,6 @@ function ProductCard({ product, isWishlisted, onToggleWishlist }) {
             e.target.src = 'https://via.placeholder.com/300x300/E5E7EB/9CA3AF?text=Image+Error';
           }}
         />
-
-
-
-        
 
         {discount > 0 && (
           <span className="absolute top-3 left-3 bg-gradient-to-r from-rose-500 via-indigo-500 to-zinc-900 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
@@ -436,19 +414,11 @@ function ProductCard({ product, isWishlisted, onToggleWishlist }) {
         </div>
       </div>
 
-
-      {/* --- Details & Call-to-Action Area --- */}
-      <div className="p-6 flex flex-col flex-1">
-        <div className="flex-1">
-          <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1">
-            {product.brand}
-
       {/* Details & Call-to-Action Area */}
       <div className="p-6 flex flex-col flex-1">
         <div className="flex-1">
           <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1">
-            {product.gender} {/* Changed from brand to gender */}
-
+            {product.gender}
           </p>
           <h3 className="font-semibold text-zinc-800 text-lg leading-tight mb-3">
             {product.name}
