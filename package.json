@@ -1,7 +1,6 @@
 {
   "name": "rachna",
-  "homepage": "https://gchang2004.github.io/Rachna",
-  "version": "0.1.0",
+    "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.15",
