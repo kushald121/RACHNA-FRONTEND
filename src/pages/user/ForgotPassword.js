@@ -414,7 +414,7 @@ const ForgotPassword = () => {
                     Your password has been reset successfully. You can now login with your new password.
                   </p>
                   <motion.button
-                    onClick={() => navigate('/sign-in')}
+                    onClick={() => navigate('/Rachna/user-login/')}
                     className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 rounded-lg font-semibold hover:from-green-600 hover:to-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all duration-200"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
@@ -428,7 +428,7 @@ const ForgotPassword = () => {
             {/* Back to Login */}
             <div className="mt-6 text-center">
               <Link 
-                to="/sign-in"
+                to="/Rachna/user-login/"
                 className="inline-flex items-center text-sm text-gray-600 hover:text-blue-600 transition-colors duration-200"
               >
                 <FiArrowLeft className="w-4 h-4 mr-1" />
