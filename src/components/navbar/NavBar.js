@@ -306,7 +306,10 @@ const NavBar = () => {
 
       {/* DESKTOP MENU - MYNTRA STYLE */}
       <header className="relative bg-white shadow-sm">
-        <nav className="mx-auto px-4 sm:px-6 lg:px-8" style={{ maxWidth: '85%' }}>
+        <nav
+          className="mx-auto px-2 sm:px-6 lg:px-8"
+          style={{ maxWidth: '100%' }}
+        >
           <motion.div
             className="border-b border-gray-200"
             initial="hidden"
@@ -316,19 +319,20 @@ const NavBar = () => {
           >
             <div className="flex h-16 lg:h-20 items-center justify-between w-full">
               {/* LEFT SECTION: Mobile Menu + Logo + Navigation */}
-              <div className="flex items-center">
+              <div className="flex items-center w-full lg:w-auto">
                 {/* Mobile Menu Button */}
                 <motion.button
                   variants={textMotion}
                   type="button"
-                  className="rounded-md bg-white p-2 text-gray-400 hover:text-indigo-600 lg:hidden mr-2"
+                  className="rounded-md bg-white p-2 text-gray-400 hover:text-indigo-600 lg:hidden mr-1 ml-0"
+                  style={{ marginLeft: 0 }}
                   onClick={() => setOpen(true)}
                 >
                   <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                 </motion.button>
 
                 {/* Logo */}
-                <motion.div className="flex" variants={textMotion}>
+                <motion.div className="flex ml-2 lg:ml-0" variants={textMotion}>
                   <Link to="/">
                     <h1 className="h-8 w-auto font-bold font-amperserif text-[#E50010] text-2xl lg:text-3xl">RACHNA</h1>
                   </Link>

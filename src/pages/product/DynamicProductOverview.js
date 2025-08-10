@@ -15,6 +15,9 @@ function classNames(...classes) {
 }
 
 const DynamicProductOverview = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { productId } = useParams();
   const navigate = useNavigate();
   const { user, getCurrentSessionId, getSessionType, getAuthHeaders } = useAuth();

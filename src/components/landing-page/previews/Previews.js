@@ -88,7 +88,7 @@ const Previews = () => {
         <motion.div className="mx-auto max-w-2xl py-14 lg:max-w-none lg:py-16"
           initial="hidden"
           whileInView="visible"
-          viewport={{once: true, amount: 0.2}}
+          viewport={{once: true, amount: 0.05}}
           variants={containerMotion}
           >
           {/* SECTION TEXT */}
@@ -107,7 +107,12 @@ const Previews = () => {
           {/* REUSABLE TEMPlATE FORMAT */}
           <div className="mt-6 space-y-12 lg:grid sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-6 lg:space-y-0">
             {callouts.map((callout) => (
-              <div key={callout.name} className="group relative">
+              <motion.div
+                key={callout.name}
+                className="group relative"
+                whileHover={{ scale: 1.05, boxShadow: '0 8px 32px 0 rgba(60, 60, 180, 0.15)', filter: 'brightness(1.08)' }}
+                transition={{ type: 'spring', stiffness: 300, damping: 18 }}
+              >
                 
                 {/* Collection Image */}
                 <motion.div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 shadow-xl transition-transform duration-300 transform group-hover:scale-95 sm:h-64" variants={imageMotion}>
@@ -136,7 +141,7 @@ const Previews = () => {
                   
                 </motion.span>
 
-              </div>
+              </motion.div>
             ))}
           </div>
 
