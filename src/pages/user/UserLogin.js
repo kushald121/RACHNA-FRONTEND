@@ -345,13 +345,13 @@ const UserLogin = () => {
   return (
     <>
       <NavBar />
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-center p-2 sm:p-4">
         <div
           ref={containerRef}
-          className="w-full max-w-6xl bg-white rounded-3xl shadow-2xl overflow-hidden"
-          style={{ minHeight: '600px' }}
+          className="w-full max-w-lg sm:max-w-2xl lg:max-w-6xl bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden"
+          style={{ minHeight: '400px' }}
         >
-          <div className="flex h-full">
+          <div className="flex flex-col lg:flex-row h-full">
             {/* Left Side - Form */}
             <div ref={formRef} className="w-full lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
 
@@ -485,7 +485,7 @@ const UserLogin = () => {
                       {isLogin && (
                         <div className="text-right mt-2">
                           <Link
-                            to="/forgot-password/"
+                            to="/Rachna/forgot-password/"
                             className="text-sm text-gray-600 hover:text-black transition duration-300"
                           >
                             Forgot Password?

@@ -154,7 +154,7 @@ const NavBar = () => {
   }, [searchQuery]);
 
   return (
-    <div className="bg-white">
+  <div className="bg-white w-full">
       {/* MOBILE MENU */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -305,9 +305,9 @@ const NavBar = () => {
       </Transition.Root>
 
       {/* DESKTOP MENU - MYNTRA STYLE */}
-      <header className="relative bg-white shadow-sm">
+      <header className="relative bg-white shadow-sm w-full">
         <nav
-          className="mx-auto px-2 sm:px-6 lg:px-8"
+          className="mx-auto px-2 sm:px-4 md:px-6 lg:px-8 w-full"
           style={{ maxWidth: '100%' }}
         >
           <motion.div
@@ -317,24 +317,25 @@ const NavBar = () => {
             viewport={{ once: true, amount: 0.2 }}
             variants={containerMotion1}
           >
-            <div className="flex h-16 lg:h-20 items-center justify-between w-full">
+            <div className="flex h-14 sm:h-16 lg:h-20 items-center justify-between w-full px-0 sm:px-0">
               {/* LEFT SECTION: Mobile Menu + Logo + Navigation */}
-              <div className="flex items-center w-full lg:w-auto">
+              <div className="flex items-center w-full lg:w-auto min-w-0">
                 {/* Mobile Menu Button */}
                 <motion.button
                   variants={textMotion}
                   type="button"
-                  className="rounded-md bg-white p-2 text-gray-400 hover:text-indigo-600 lg:hidden mr-1 ml-0"
+                  className="rounded-md bg-white p-2 text-gray-400 hover:text-indigo-600 lg:hidden mr-1 ml-0 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                   style={{ marginLeft: 0 }}
                   onClick={() => setOpen(true)}
+                  aria-label="Open menu"
                 >
-                  <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                  <Bars3Icon className="h-7 w-7 sm:h-6 sm:w-6" aria-hidden="true" />
                 </motion.button>
 
                 {/* Logo */}
-                <motion.div className="flex ml-2 lg:ml-0" variants={textMotion}>
+                <motion.div className="flex ml-2 lg:ml-0 min-w-0" variants={textMotion}>
                   <Link to="/">
-                    <h1 className="h-8 w-auto font-bold font-amperserif text-[#E50010] text-2xl lg:text-3xl">RACHNA</h1>
+                    <h1 className="h-7 sm:h-8 w-auto font-bold font-amperserif text-[#E50010] text-xl sm:text-2xl lg:text-3xl truncate">RACHNA</h1>
                   </Link>
                 </motion.div>
 
@@ -354,7 +355,8 @@ const NavBar = () => {
               </div>
 
               {/* CENTER SECTION: Search Bar */}
-              <div className="flex-1 max-w-2xl mx-6 lg:mx-12">
+              <div className="flex-1 max-w-full sm:max-w-2xl mx-2 sm:mx-6 lg:mx-12">
+                {/* Desktop search bar */}
                 <motion.form onSubmit={handleSearchSubmit} className="hidden lg:flex relative w-full" variants={textMotion}>
                   <div className="relative w-full">
                     <MagnifyingGlassIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
@@ -379,14 +381,14 @@ const NavBar = () => {
               </div>
 
               {/* RIGHT SECTION: India Flag + Profile + Wishlist + Bag */}
-              <div className="flex items-center space-x-8">
+              <div className="flex items-center space-x-4 sm:space-x-6 md:space-x-8 min-w-0">
                 {/* India Flag */}
                 <motion.div className="hidden lg:flex items-center" variants={textMotion}>
                   <span className="text-lg">🇮🇳</span>
                 </motion.div>
 
                 {/* Profile */}
-                <motion.div className="flex flex-col items-center group cursor-pointer" variants={textMotion}>
+                <motion.div className="flex flex-col items-center group cursor-pointer min-w-0" variants={textMotion}>
                   {user ? (
                     <Menu as="div" className="relative">
                       {({ open }) => (
@@ -447,7 +449,7 @@ const NavBar = () => {
                 </motion.div>
 
                 {/* Wishlist */}
-                <motion.div className="flex flex-col items-center cursor-pointer" variants={textMotion}>
+                <motion.div className="flex flex-col items-center cursor-pointer min-w-0" variants={textMotion}>
                   <Link
                     to="/Rachna/favorites/"
                     className="flex flex-col items-center text-gray-700 hover:text-indigo-600 transition-colors relative"
@@ -463,7 +465,7 @@ const NavBar = () => {
                 </motion.div>
 
                 {/* Bag */}
-                <motion.div className="flex flex-col items-center cursor-pointer" variants={textMotion}>
+                <motion.div className="flex flex-col items-center cursor-pointer min-w-0" variants={textMotion}>
                   <div
                     onClick={handleCartClick}
                     className="flex flex-col items-center text-gray-700 hover:text-indigo-600 transition-colors relative"

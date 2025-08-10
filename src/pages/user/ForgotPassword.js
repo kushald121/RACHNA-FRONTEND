@@ -175,10 +175,9 @@ const ForgotPassword = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <NavBar />
-      
-      <main className="flex-grow flex items-center justify-center px-4 py-8">
+      <main className="flex-grow flex items-center justify-center px-2 sm:px-4 py-6 sm:py-8">
         <motion.div 
-          className="w-full max-w-md"
+          className="w-full max-w-xs sm:max-w-md"
           initial="hidden"
           animate="visible"
           variants={containerVariants}

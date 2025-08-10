@@ -306,9 +306,9 @@ const ProductsPage = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
       <NavBar />
-      <main className="container mx-auto py-10 md:py-16 px-4 sm:px-8">
+      <main className="container mx-auto py-6 md:py-10 px-2 sm:px-4">
         <HeroBanner searchQuery={searchQuery} productCount={filteredProducts.length} />
-        <div className="flex flex-col lg:flex-row gap-12 items-start">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-12 items-start">
           <FiltersSidebar
             isOpen={isFilterOpen}
             onClose={() => setFilterOpen(false)}

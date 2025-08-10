@@ -63,7 +63,7 @@ const TermsAndConditions = () => {
       content: (
         <>
           <p>
-            This website is operated by Rachna Collective. Throughout the site,
+            This website is operated by Rachna Collection. Throughout the site,
             the terms “we”, “us” and “our” refer to Rachna Collective. We offer
             this website, including all information, tools and Services
             available from this site to you, the user, conditioned upon your
@@ -258,7 +258,7 @@ const TermsAndConditions = () => {
         <p>
           We do not guarantee that your use of our Service will be uninterrupted
           or error-free. Your use of the Service is at your sole risk. In no
-          case shall Ajeeb Collective, our directors, officers, or employees be
+          case shall Rachna Collection, our directors, officers, or employees be
           liable for any injury, loss, claim, or any direct, indirect,
           incidental, or consequential damages of any kind.
         </p>
@@ -269,7 +269,7 @@ const TermsAndConditions = () => {
       title: "Section 14: Indemnification",
       content: (
         <p>
-          You agree to indemnify, defend and hold harmless Ajeeb Collective and
+          You agree to indemnify, defend and hold harmless Rachna Collection and
           our parent, subsidiaries, affiliates, partners, and employees from any
           claim or demand, including reasonable attorneys’ fees, made by any
           third-party due to or arising out of your breach of these Terms of
@@ -319,7 +319,7 @@ const TermsAndConditions = () => {
       content: (
         <p>
           These Terms of Service shall be governed by and construed in
-          accordance with the laws of Pakistan.
+          accordance with the laws of India.
         </p>
       ),
     },
