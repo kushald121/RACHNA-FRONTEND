@@ -381,14 +381,14 @@ const NavBar = () => {
               </div>
 
               {/* RIGHT SECTION: India Flag + Profile + Wishlist + Bag */}
-              <div className="flex items-center space-x-4 sm:space-x-6 md:space-x-8 min-w-0">
+              <div className="flex items-center space-x-10 sm:space-x-12 md:space-x-14 min-w-0 px-2 py-1 ml-4 sm:ml-8 md:ml-12 lg:space-x-8 lg:px-0 lg:py-0 lg:ml-0">
                 {/* India Flag */}
                 <motion.div className="hidden lg:flex items-center" variants={textMotion}>
                   <span className="text-lg">🇮🇳</span>
                 </motion.div>
 
                 {/* Profile */}
-                <motion.div className="flex flex-col items-center group cursor-pointer min-w-0" variants={textMotion}>
+                <motion.div className="flex flex-col items-center group cursor-pointer min-w-0 ml-2 sm:ml-4 md:ml-6 lg:ml-0" variants={textMotion}>
                   {user ? (
                     <Menu as="div" className="relative">
                       {({ open }) => (
@@ -449,7 +449,7 @@ const NavBar = () => {
                 </motion.div>
 
                 {/* Wishlist */}
-                <motion.div className="flex flex-col items-center cursor-pointer min-w-0" variants={textMotion}>
+                <motion.div className="flex flex-col items-center cursor-pointer min-w-0 ml-2 sm:ml-4 md:ml-6 lg:ml-0" variants={textMotion}>
                   <Link
                     to="/Rachna/favorites/"
                     className="flex flex-col items-center text-gray-700 hover:text-indigo-600 transition-colors relative"
@@ -465,7 +465,7 @@ const NavBar = () => {
                 </motion.div>
 
                 {/* Bag */}
-                <motion.div className="flex flex-col items-center cursor-pointer min-w-0" variants={textMotion}>
+                <motion.div className="flex flex-col items-center cursor-pointer min-w-0 ml-2 sm:ml-4 md:ml-6 lg:ml-0" variants={textMotion}>
                   <div
                     onClick={handleCartClick}
                     className="flex flex-col items-center text-gray-700 hover:text-indigo-600 transition-colors relative"
