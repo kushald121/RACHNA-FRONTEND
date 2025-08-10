@@ -182,7 +182,7 @@ const NavBar = () => {
             >
               <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl">
                 <div className="flex items-center justify-between px-4 pb-2 pt-5">
-                  <Link to="/Rachna/" onClick={() => setOpen(false)}>
+                  <Link to="/" onClick={() => setOpen(false)}>
                     <h1 className="h-8 w-auto font-bold font-amperserif text-[#E50010] text-xl">RACHNA</h1>
                   </Link>
                   <button
@@ -205,7 +205,7 @@ const NavBar = () => {
                       placeholder="Search for products, collections and more"
                       className="w-full pl-10 pr-10 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-sm"
                     />
-                    {searchInput && (
+                    {searchInput && (  
                       <button
                         type="button"
                         onClick={handleClearSearch}
@@ -329,7 +329,7 @@ const NavBar = () => {
 
                 {/* Logo */}
                 <motion.div className="flex" variants={textMotion}>
-                  <Link to="/Rachna/">
+                  <Link to="/">
                     <h1 className="h-8 w-auto font-bold font-amperserif text-[#E50010] text-2xl lg:text-3xl">RACHNA</h1>
                   </Link>
                 </motion.div>

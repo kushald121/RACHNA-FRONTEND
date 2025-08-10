@@ -52,7 +52,7 @@ const App = () => {
          {/* //<SplashCursor/> */}
 
         <Routes>
-          <Route exact path="/Rachna/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           {/* Payment */}
           <Route path ="/Rachna/payment"  element={<PaymentPage/>}/>
           <Route path ="/Rachna/old-payment"  element={<Payment/>}/>

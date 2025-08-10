@@ -194,7 +194,7 @@ const UserLogin = () => {
 
           // Update user context directly
           updateUser(response.data.user);
-          navigate('/Rachna/');
+          navigate('/');
         }
       } else {
         // Signup flow - validate passwords first
@@ -276,7 +276,7 @@ const UserLogin = () => {
         localStorage.setItem('authExpiry', expiryDate.toISOString());
 
         updateUser(response.data.user);
-        navigate('/Rachna/');
+  navigate('/');
       } else {
         setError(response.data.message || 'Invalid OTP');
       }
@@ -485,7 +485,7 @@ const UserLogin = () => {
                       {isLogin && (
                         <div className="text-right mt-2">
                           <Link
-                            to="/Rachna/forgot-password/"
+                            to="/forgot-password/"
                             className="text-sm text-gray-600 hover:text-black transition duration-300"
                           >
                             Forgot Password?

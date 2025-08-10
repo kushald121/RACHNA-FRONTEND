@@ -58,13 +58,13 @@ const ShoppingCart = ({ open, setOpen }) => {
 
       let response;
       if (sessionType === 'user') {
-        // Fetch from user cart
-        response = await axios.get(`https://rachna-backend-1.onrender.com/cart/${sessionId}`, {
+        // Fetch from user cart (hosted backend)
+        response = await axios.get(`https://rachna-backend-1.onrender.com/api/cart/${sessionId}`, {
           headers: getAuthHeaders()
         });
       } else {
-        // Fetch from guest cart
-        response = await axios.get(`https://rachna-backend-1.onrender.com/${sessionId}`);
+        // Fetch from guest cart (hosted backend)
+        response = await axios.get(`https://rachna-backend-1.onrender.com/api/guest-cart/${sessionId}`);
       }
 
       if (response.data.success) {
@@ -119,7 +119,7 @@ const ShoppingCart = ({ open, setOpen }) => {
 
       let response;
       if (sessionType === 'user') {
-        // Update user cart
+        // Update user cart (hosted backend)
         response = await axios.put('https://rachna-backend-1.onrender.com/api/cart', {
           userId: sessionId,
           productId: parseInt(productId), // Ensure productId is a number
@@ -129,7 +129,7 @@ const ShoppingCart = ({ open, setOpen }) => {
         });
         console.log('User cart update response:', response.data);
       } else {
-        // Update guest cart
+        // Update guest cart (hosted backend)
         response = await axios.put('https://rachna-backend-1.onrender.com/api/guest-cart/update', {
           sessionId,
           productId: parseInt(productId), // Ensure productId is a number
@@ -164,13 +164,13 @@ const ShoppingCart = ({ open, setOpen }) => {
       const sessionType = getSessionType();
 
       if (sessionType === 'user') {
-        // Remove from user cart
+        // Remove from user cart (hosted backend)
         await axios.delete(`https://rachna-backend-1.onrender.com/api/cart/${productId}`, {
           data: { userId: sessionId },
           headers: getAuthHeaders()
         });
       } else {
-        // Remove from guest cart
+        // Remove from guest cart (hosted backend)
         await axios.delete('https://rachna-backend-1.onrender.com/api/guest-cart/remove', {
           data: { sessionId, productId }
         });

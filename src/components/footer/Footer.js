@@ -175,19 +175,19 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <Link to="/Rachna/" className="text-gray-700 text-lg lg:text-xl font-medium transition hover:text-indigo-600 hover:underline">
+                    <Link to="/" className="text-gray-700 text-lg lg:text-xl font-medium transition hover:text-indigo-600 hover:underline">
                       Careers
                     </Link>
                   </li>
 
                   <li>
-                    <Link to="/Rachna/" className="text-gray-700 text-lg lg:text-xl font-medium transition hover:text-indigo-600 hover:underline">
+                    <Link to="/" className="text-gray-700 text-lg lg:text-xl font-medium transition hover:text-indigo-600 hover:underline">
                       Investors
                     </Link>
                   </li>
 
                   <li>
-                    <Link to="/Rachna/" className="text-gray-700 text-lg lg:text-xl font-medium transition hover:text-indigo-600 hover:underline">
+                    <Link to="/" className="text-gray-700 text-lg lg:text-xl font-medium transition hover:text-indigo-600 hover:underline">
                       Sustainability
                     </Link>
                   </li>
